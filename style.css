@@ -481,10 +481,51 @@ footer{
     .section2 div{
         width: 70%;
     }
+    .section4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .section4div{
+        width: 50%;
+        border: 1px solid black;
+        margin-top: 10px;
+
+       }
+       .btnbox{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+       }
+       .section5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+       .section5 div{
+        width: 50%;
+       }
+       .section5 img{
+        display: none;
+       }
+       .section5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       .section5 div{
+        width: 70%;
+       }
+       .section2 img{
+        margin-top: 10px;
+       }
 }
 @media  (max-width:768px) {
       .section1{
         background-color: #ff4800;
+        
       }
       .section1 button{
         display: none;
@@ -493,10 +534,119 @@ footer{
         width: 70%;
         font-size: 20px;
        }
-}
-@media (max-width:428px){
-    .section2 div{
-        width: 70%;
-        font-size: 20px;
+       .box1{
+        font-size: 34px;
        }
+       .boxes{
+        width: 240px;
+  height: 200px;
+  box-shadow: 1px 1px 10px 1px rgb(83, 83, 83);
+  margin: 10px 10px;
+  border-radius: 5px;
+       }
+       .section2 img{
+        margin-top: 10px;
+       }
+       .container3{
+        width: 100%;
+        
+       
+     }
+    .box3{
+        display: flex;
+        padding: 0px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        align-items: center;
+       }
+    .boxes{
+        width: 200px;
+        height: 200px;
+        box-shadow: 1px 1px 10px 1px rgb(83, 83, 83);
+        margin: 10px 10px;
+        border-radius: 5px;
+       
+       }
+       .paragraphs4{
+        font-size: 13px;
+        width: 50%;
+       }
+       .section4 img{
+        width: 80%;
+       }
+       .section5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+       .section5 div{
+        width: 80%;
+       }
+       .sections6{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid yellow;
+       }
+       
+}
+@media (max-width:590px){
+
+    .section1 {
+      display: flex;
+      
+    }
+    .section2p{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .section2 div{
+        width: 90%;
+        margin: 0;
+        padding-left: 10px;
+        
+
+       }
+       
+    .section2 div p{
+        font-size: 20px;
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container3{
+        width: 100%;
+        
+       
+     }
+    .box3{
+        display: flex;
+        padding: 0px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        align-items: center;
+       }
+    .boxes{
+        width: 200px;
+        height: 200px;
+        box-shadow: 1px 1px 10px 1px rgb(83, 83, 83);
+        margin: 10px 10px;
+        border-radius: 5px;
+       
+       }
+       .paragraphs4{
+        font-size: 13px;
+        width: 50%;
+       }
+       .section4 img{
+        width: 90%;
+       }
+ 
 }
