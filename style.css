@@ -9,6 +9,15 @@
     padding: 10px 108px;
     font-weight:bolder;
     align-items: center;
+    position: relative;
+}
+#bars{
+    display: none;
+   
+    position: absolute;
+    right: 29px;
+    font-size: 28px;
+    
 }
 .section1 h3{
     font-size: 26px;
@@ -33,67 +42,78 @@
  font-size: medium;
  box-shadow: 0px 0px 10px 1px rgb(238, 195, 115);
 }
+/* section 2 */
 .section2{
-  width: 100vw;
-  
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100vw;
- margin-top: 80px;
-}
-.section2 div button{
-    background-color: #ff6004;
-    color: white;
-    padding: 8px 26px;
-    border: 0px;
-    border-radius: 5px;
-    font-size: medium;
-    box-shadow: 0px 0px 20px 2px rgb(238, 195, 115);
+    width: 100%;
     
-}
-.section2 div{
-   width: 46%;
-   
-   padding-left: 104px;
-   padding-top: 40px;
-   
-}
-
-.section2 img{
-    width: 46%;
-}
-.section2 div h2 span{
-    color: #ff6004;
-}
-.section2 div p{
-    
-    margin: 30px 0px;
-    width: 80%;
-    font-size: 20px;
-    color: rgb(68, 67, 67);
-}
-.section2 h2{
-    font-size: 50px;
-}
-
-.section2 div div{
-    font-size: 20px;
-    padding: 0;
-    margin-top: 30px;
-    font-size: 20px;
     display: flex;
-    align-items: center;
-}
-.section2 div div span{
-    color: #ff6004;
-    font-size: 40px;
-    margin-right: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+   margin-top: 80px;
+  }
+  .section2 div button{
+      background-color: #ff6004;
+      color: white;
+      padding: 8px 26px;
+      border: 0px;
+      border-radius: 5px;
+      font-size: medium;
+      box-shadow: 0px 0px 20px 2px rgb(238, 195, 115);
+      
+  }
+  .section2 div {
+    width: 25%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+   
+  } 
+ 
+  .images2 {
+    width: 30%;
+    margin-left: 7%;
     
-    border-radius: 50%;
-    padding: 4px 8px;
-   box-shadow: 1px 1px 29px 1px grey
+  }
+  .section2 div h2 span{
+      color: #ff6004;
+  }
+  .section2 div p{
+      
+      margin: 30px 0px;
+      width: 60%;
+      font-size: 20px;
+      color: rgb(68, 67, 67);
+  }
+  .section2 h2{
+      font-size: 50px;
+  }
+  
+  .section2 div div{
+      font-size: 20px;
+      padding: 0;
+      margin-top: 30px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+  }
+  .section2 div div span{
+      color: #ff6004;
+      font-size: 40px;
+      margin-right: 18px;
+      
+      border-radius: 50%;
+      padding: 4px 8px;
+     box-shadow: 1px 1px 29px 1px grey
+  }
+  
+#imgprofile{
+    object-fit: cover;
+     border: 1px solid green;
+     border-radius: 40%;
+     padding: 3px 6px;
 }
+
 
 .section3{
    
@@ -174,7 +194,7 @@
 }
 .section4{
   width: 100vw;
-  
+  background-color:   #fbdcb2;
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -189,8 +209,13 @@
  height: 500px;
 }
 .section4 div{
-    /* background-color: rgba(255, 186, 186, 0.651); */
-    /* border: 1px solid black; */
+    /* background-color: rgba(211, 144, 45, 0.651);
+    border: 1px solid black; */
+    
+}
+.section4div{
+    background-color:  #fbdcb2;
+   
 }
 .gt{
     position: absolute;
@@ -325,12 +350,15 @@
 }
 .container6{
     display: flex;
-    width: 100vw;
-    display: flex;
+    /* width: 100vw; */
+  
     justify-content: center;
+    overflow: auto;
+    
+    /* display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    position: relative;
+    position: relative; */
     margin-top: 19px;
 }
 .boxs6{
@@ -356,6 +384,7 @@
 .profile{
     display: flex;
     margin: 10px 20px;
+    
 }
 .icons{
     font-size: 40px;
@@ -389,7 +418,7 @@
 footer{
     width: 100vw;
    
-    background-color: rgb(223, 205, 201);
+    background-color: rgb(252, 184, 145);
     margin-top: 100px;
     position: relative;
     padding-bottom: 100px;
@@ -482,8 +511,9 @@ footer{
     background-color: rgb(15, 81, 143);
     border-radius: 50%;
     padding: 5px 10px;
-   
+    font-size: 14px;
 }
+
 @media  (max-width:1300px) {
     .section1{
       background-color: #ff4800;
@@ -500,10 +530,14 @@ footer{
     .section2 div{
         width: 70%;
     }
+   
     .section4{
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color:   #fbdcb2;
+        
+        padding-bottom: 30px;
        }
        .section4div{
         width: 50%;
@@ -511,6 +545,33 @@ footer{
         margin-top: 10px;
 
        }
+
+       .btn1{
+        padding: 9px 40px; 
+        border-radius: 5px;
+        border: 0px;
+        background-color: #ff4800;
+        font-size: 13px;
+        color: white;
+     
+     }
+     .btn2{
+        background:none;
+        border: 3px solid orangered;
+        padding: 5px 30px; 
+        border-radius: 5px;
+        font-size: 13px;
+        color: orangered;
+     }
+     .btnbox{
+         width: 50%;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 20px;
+     }
+
+
+
        .btnbox{
         display: flex;
         width: 100%;
@@ -522,38 +583,112 @@ footer{
         align-items: center;
 
        }
-       .section5 div{
-        width: 50%;
-       }
-       .section5 img{
-        display: none;
-       }
-       .section5{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
+    
+       
+      
+    .section5 img{
+        width: 48%;
+        height: 500px;
+    }
+    .section5 div{
+        padding-left: 104px;
+        width: 48%;
+        margin-top: 30px;
         
-       }
-       .section5 div{
-        width: 70%;
-       }
-       .section2 img{
-        margin-top: 10px;
-       }
+    }
+    
+    .section5 div h3{
+        font-size: 45px;
+        margin-bottom: 25px;
+       padding-left: 14px;
+    }
+    .section5 div p{
+        font-size: 15px;
+        color: rgb(68, 67, 67);
+        line-height: 27px;
+        width: 60%;
+    }
+    .section5 div h3 span{
+        color: orangered;
+    }
+
+
+
+
 }
 @media  (max-width:768px) {
       .section1{
         background-color: #ff4800;
-        
+        /* padding: 0; */
+        padding-left: 30px;
       }
       .section1 button{
         display: none;
        }
-       .section2 div{
+       .btn1{
+        padding: 9px 40px; 
+        border-radius: 5px;
+        border: 0px;
+        background-color: #ff4800;
+        font-size: 11px;
+        color: white;
+        margin: 4px;
+     
+     }
+     .btn2{
+        background:none;
+        border: 3px solid orangered;
+        padding: 5px 30px; 
+        border-radius: 5px;
+        font-size: 11px;
+        color: orangered;
+        margin: 4px;
+     }
+
+     .btnbox{
         width: 70%;
+        display: flex;
+        justify-content: space-between;
+      
+        margin-top: 20px;
+    }
+
+
+
+
+    .section1 h3 {
+        font-size: 26px;
+        padding-left: 27px;
+      }
+       .section2 {
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+        padding-left: 0px;
+        margin-top: 20px;
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 59px;
+      }
+    }
+       .section2 div{
+        width: 40%;
+        
         font-size: 20px;
+        margin: 0;
+        padding: 0;
        }
-       .box1{
+
+       
+       .section2 img{
+        width: 80%;
+        margin-left: 7%;
+        
+    }
+    .box1{
         font-size: 34px;
        }
        .boxes{
@@ -592,9 +727,9 @@ footer{
         font-size: 13px;
         width: 50%;
        }
-       .section4 img{
-        width: 80%;
-       }
+       .section4 img {
+        width: 56%;
+      }
        .section5{
         display: flex;
         justify-content: center;
@@ -610,8 +745,53 @@ footer{
         flex-direction: column;
         border: 1px solid yellow;
        }
+
+
+
+
+    .section5{
+        display: flex;
+        width: 100vw;
+        padding: 0;
+    }
+    .section5 img{
+        width: 48%;
+        height: 500px;
+        display: none;
+    }
+    .section5 div{
+        padding-left: 104px;
+        width: 78%;
+        margin-top: 30px;
+        
+    }
+    
+    .section5 div h3{
+        font-size: 40px;
+        margin-bottom: 25px;
+       padding-left: 14px;
+    }
+    .section5 div p{
+        font-size: 18px;
+        color: rgb(68, 67, 67);
+        line-height: 27px;
+        width: 80%;
+    }
+    .section5 div h3 span{
+        color: orangered;
+    }
+    #bars{
+        display: block;
+    }
+    
+      .section2 div p {
+        margin: 31px -19px;
+        width: 80%;
+        font-size: 20px;
+        color: rgb(68, 67, 67);
+      }
        
-}
+
 @media (max-width:590px){
 
     .section1 {
@@ -667,5 +847,121 @@ footer{
        .section4 img{
         width: 90%;
        }
- 
+       .section4div{
+        width: 70%;
+        /* border: 1px solid black; */
+        margin-top: 10px;
+
+       }
+       .headings4{
+        width: 100%;
+        font-size: 29px;
+       }
+       .paragraphs4{
+        width: 70%;
+       }
+       .boxs4{
+        font-size: 14px;
+       }
+
+    .section5{
+        display: flex;
+        width: 100vw;
+        padding: 0;
+    }
+    .section5 img{
+        width: 48%;
+        height: 500px;
+        display: none;
+    }
+    .section5 div{
+        padding-left: 60px;
+        width: 85%;
+        margin-top: 20px;
+        
+    }
+    
+    .section5 div h3{
+        font-size: 44px;
+    margin-bottom: 6px;
+    padding-left: 0px;
+    }
+    .section5 div p{
+        font-size: 15px;
+        color: rgb(68, 67, 67);
+        line-height: 27px;
+        width: 87%;
+        padding: 0;
+    }
+    .section5 div h3 span{
+        color: orangered;
+        padding: 0;
+    }
+    .btns5 {
+        padding: 9px 40px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: #ff4800;
+        font-size: 17px;
+        color: white;
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+      .section6 h3 {
+        font-size: 36px;
+      }
+      .section6 p {
+        width: 62%;
+        font-size: 15px;
+        text-align: center;
+        color: grey;
+        margin-top: 8px;
+      }
+      .ftitle {
+        width: 66%;
+        height: 47px;
+        display: flex;
+        justify-content: space-between;
+        background: #ff671f;
+        align-items: center;
+        color: white;
+        border-radius: 14px;
+        padding: 0 27px;
+      }
+      .copywrite {
+        background-color: #ff4800;
+        height: 37px;
+        width: 100vw;
+        position: absolute;
+        text-align: center;
+        bottom: 0px;
+        border-top-left-radius: 123%;
+        border-top-right-radius: 96%;
+        color: white;
+        padding-top: 11px;
+        font-size: 12px;
+      }
+}
+@media (max-width:450px){
+    .ftitle {
+        width: 69%;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        background: #ff671f;
+        align-items: center;
+        color: white;
+        border-radius: 14px;
+        padding: 0 26px;
+      }
+    
+    btnorange {
+        border: 0;
+        border-style: none;
+        background: none;
+        border: 2px solid white;
+        padding: 4px 12px;
+        border-radius: 6px;
+        color: white;
+      }
 }
